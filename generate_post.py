@@ -7,7 +7,7 @@ from pathlib import Path
 
 GROQ_API_KEY = os.environ["GROQ_API_KEY"]
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-MODEL = "llama3-70b-8192"
+MODEL = "llama-3.3-70b-versatile"
 
 KYLE_VOICE = """
 You are generating a post in the voice of Kyle Winters. He was a designer and thinker from Bay City and Berkley, Michigan. He studied philosophy at Central Michigan University, spent twenty years in design, and never stopped asking the fundamental questions.
