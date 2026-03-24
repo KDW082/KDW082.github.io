@@ -1,0 +1,37 @@
+name: Daily Post
+
+on:
+  schedule:
+    - cron: '0 14 * * *'  # 9am EST every day
+  workflow_dispatch:       # allows manual trigger
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate daily post
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python generate_post.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "Immortality Project"
+          git config user.email "immortality@kyledwinters.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "Daily post — $(date +'%Y-%m-%d')"
+          git push
