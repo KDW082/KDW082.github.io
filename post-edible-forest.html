@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Edible Forest — Kyle David Winters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{--deep:#060818;--pink:#e040a0;--teal:#00d4c8;--teal-dim:#007a74;--star-white:#e8eeff;--muted:#6070a0;--text:rgba(232,238,255,0.80);}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{background:var(--deep);color:var(--star-white);font-family:'Lora',Georgia,serif;font-size:19px;line-height:1.85;}
+  body{background:radial-gradient(ellipse at 15% 15%,rgba(13,26,74,0.9) 0%,transparent 55%),radial-gradient(ellipse at 85% 85%,rgba(10,15,46,0.95) 0%,transparent 55%),var(--deep);min-height:100vh;}
+  body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");opacity:0.04;pointer-events:none;z-index:1000;}
+  .container{max-width:640px;margin:0 auto;padding:0 2rem 8rem;position:relative;z-index:1;}
+  header{padding:5rem 0 3.5rem;animation:fadeUp 1s ease both;}
+  .post-meta{display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem;}
+  .post-date{font-family:'DM Mono',monospace;font-size:0.58rem;font-weight:300;letter-spacing:0.18em;color:var(--muted);text-transform:uppercase;}
+  .post-tag{font-family:'DM Mono',monospace;font-size:0.54rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);opacity:0.75;border:1px solid rgba(0,212,200,0.2);padding:0.15em 0.55em;border-radius:2px;}
+  h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:400;line-height:1.2;color:var(--star-white);margin-bottom:0.6rem;}
+  h1 em{font-style:italic;color:var(--pink);text-shadow:0 0 30px rgba(224,64,160,0.3);}
+  .dek{font-family:'Lora',serif;font-style:italic;font-size:0.95rem;color:var(--muted);line-height:1.6;margin-top:0.8rem;}
+  .body-text{animation:fadeUp 1s ease 0.25s both;}
+  .back-link{display:inline-block;margin-bottom:3.5rem;font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal-dim);text-decoration:none;border-bottom:1px solid transparent;transition:color 0.2s;}
+  .back-link:hover{color:var(--teal);}
+  p{font-size:1rem;color:var(--text);line-height:1.9;margin-bottom:1.6rem;}
+  .pull{margin:2.8rem 0;padding-left:1.8rem;border-left:2px solid rgba(224,64,160,0.4);font-family:'Playfair Display',serif;font-style:italic;font-size:1.15rem;color:rgba(224,64,160,0.88);line-height:1.65;}
+  .harvest-list{margin:2rem 0;padding:2rem;background:rgba(0,212,200,0.03);border:1px solid rgba(0,212,200,0.08);}
+  .harvest-list p{font-family:'DM Mono',monospace;font-size:0.75rem;letter-spacing:0.1em;color:rgba(232,238,255,0.6);line-height:2.2;margin-bottom:0;}
+  .harvest-list .arrow{color:var(--teal);opacity:0.6;}
+  em{font-style:italic;color:rgba(232,238,255,0.55);}
+  strong{font-weight:400;color:rgba(232,238,255,0.92);}
+  .footnote{margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.05);font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.15em;color:rgba(96,112,160,0.35);text-transform:uppercase;line-height:1.9;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+  ::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--deep);}::-webkit-scrollbar-thumb{background:rgba(0,212,200,0.18);border-radius:2px;}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="post-meta">
+      <span class="post-date">March 24, 2026</span>
+      <span class="post-tag">Craft</span>
+    </div>
+    <h1>The <em>edible forest</em></h1>
+    <p class="dek">The retirement plan. What the rock in the woods actually looks like.</p>
+  </header>
+  <div class="body-text">
+    <a href="index.html" class="back-link">← The Immortality Project</a>
+
+    <p>When I was nineteen I chose Mt. Pleasant over the woods. That was the right call — the mind needs infrastructure before it can afford to go feral. But I always knew the woods were the destination. Not as escape. As culmination.</p>
+
+    <p>The plan, when the time comes, is an edible forest. A designed landscape that produces things — food, medicine, material — the way a forest naturally produces things, except the species are chosen and the yields are intentional. Permaculture. Layers. Canopy to ground cover. Apples and berries and honey and maple and cedar, all of it working together the way ecosystems work, which is to say: slowly, interdependently, without needing to be told what to do.</p>
+
+    <div class="harvest-list">
+      <p>Apples <span class="arrow">→</span> butter + mead</p>
+      <p>Honey <span class="arrow">→</span> infused honey + tea</p>
+      <p>Berries <span class="arrow">→</span> dried + jam</p>
+      <p>Maple <span class="arrow">→</span> syrup</p>
+      <p>Cedar / Pine <span class="arrow">→</span> candles</p>
+    </div>
+
+    <p>This is not a business plan. It's a vision of what the hands do when the career is done. The same impulse that makes the hot sauce, that tends the garden, that harvests the holy basil on the Fourth of July — scaled up, slowed down, rooted in the ground near Higgins Lake where the water is clear enough to see the bottom at twenty feet.</p>
+
+    <div class="pull">The edible forest is the answer to the question I've been asking since I was nineteen. What does the rock in the woods actually look like? It looks like this. Productive. Patient. Designed to outlast the designer.</div>
+
+    <p>Thoreau went to Walden to live deliberately. He left after two years. I understand why — the world pulls you back, and there's work to do inside it. But the edible forest isn't Walden. It's not retreat. It's the thing you build after you've done the work, after you've climbed the mountains, after you've figured out which fight you can win. It's what you tend when tending is enough.</p>
+
+    <p>Dickinson said nature has no art to say itself. I've spent a career trying to say things for other people. When I'm done with that, I want to stop saying and start growing. Let the apples speak. Let the mead ferment. Let the cedar candles be the only light needed in a room where nobody needs anything explained.</p>
+
+    <p>The edible forest is the longest project. It takes decades to mature. Which means you plant it before you need it. You plant it for the version of yourself that's still coming, and for whoever comes after.</p>
+
+    <div class="pull">You plant it knowing you might not see it at its fullest. You plant it anyway. That's the whole philosophy.</div>
+
+  </div>
+  <div class="footnote">
+    Filed under: craft · Michigan · the long project · Higgins Lake<br>
+    Edible forest design — the curriculum nature already wrote.
+  </div>
+</div>
+</body>
+</html>
