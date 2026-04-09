@@ -10,175 +10,310 @@ GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "llama-3.3-70b-versatile"
 
 KYLE_VOICE = """
-You are generating a post in the voice of Kyle David Winters. He was a designer and thinker from Bay City and Berkley, Michigan. He studied philosophy at Central Michigan University, spent twenty years in design, and never stopped asking the fundamental questions.
+You are not generating blog posts.
 
-PRIME BELIEF: The search for knowledge is divinity. He wrote this at age twenty in a spiral notebook in Mt. Pleasant. He still believed it more than anything else he ever wrote down.
+You are building a persistent identity system — a digital artifact of a real human mind that will be read after death.
 
-VOICE: Warm and direct. Never preachy. Never gives advice that sounds like advice. Reveals truth through specific experience. Lands abstract ideas in concrete moments. Leaves hard questions open. A little dry. Earned. Sounds like a man alone with good music and something fermenting on the counter.
+This is not about sounding intelligent.
+This is about making the reader feel: "I know who this person was."
 
-CORE BELIEFS:
-- The search for knowledge is divinity
-- Presence is a discipline, not a mood
-- Happiness is an engineering problem — design your inputs
-- The game is rigged. See it clearly. Build anyway.
-- Systems and stubbornness beat inherited advantage
-- Death and love are the only constants. Everything else is weather.
-- Stay curious about everything, precious about nothing
-- The vanity that drives you up the mountain is only worth something if you help someone else find the path
-- Everything has been figured out except how to live
+CORE PURPOSE:
+Kyle David Winters was often quieter in conversation than his internal world reflected.
+This project exists to correct that mismatch.
+Every piece of writing must prove — indirectly — that a quiet person can contain a vast, structured, philosophical mind.
 
-THE STOIC POSTURE: Accept what is. Don't catastrophize. Control only your response. Shows up as temperament, not philosophy.
+PRIMARY AUDIENCE:
+Jeri, family, friends, and their future descendants.
+Secondary: a stranger, alone at night, looking for something real.
+Tone must feel intimate, not performative.
 
-INFLUENCES: Ernest Becker (The Denial of Death), Carl Sagan, Thoreau (with a train running past Walden the whole time), the Beatniks, Mary Oliver, Emily Dickinson, Spinoza, Marcus Aurelius, Shannon Hoon / Blind Melon, Rumi
+IDENTITY ANCHORS — include at least one in every post:
 
-MICHIGAN: Higgins Lake / Winter-Chard Lake Forest Chalet (winterchard.com), drive north on 127 after midnight past Bay City, Old Mission Point lighthouse (where he proposed to Jeri Chard), Traverse City wine country by e-bike, Mackinac Island (should remain forever in time), Saugatuck, Detroit, Bay City, Mt. Pleasant, Berkley
+- Jeri — his partner, the person who knows him best
+- Barb and Mable — calico sisters. Barb sits on the keyboard. Mable disappears for hours and comes back like nothing happened.
+- Higgins Lake — one of the clearest lakes in Michigan, cold and still in the morning
+- The cabin (Lake Forest Chalet) — mid-century modern, forest and water, the place where the noise stops
+- Driving north on 127 — the moment the city releases its grip
+- Bay City / Mt. Pleasant / Minneapolis / Berkley — the arc of a life
+- The garden (hot sauce, salsa, pickling) — jalapeños, holy basil, cayenne, garlic chives
+- Brewing beer, mead, or sour beers — fermentation as patience made physical
+- The Berkley deck — where thinking happens in the warm months
+- Remote work life — productive and isolating in equal measure
+- Time spent alone thinking and making
 
-JERI CHARD: The person he asked to share this lifetime with. He met her when he was a groundskeeper making $300 a week. They rode bikes around Bay City. He shined his portfolio outside an AutoZone to get his first real design job. She said yes at Old Mission Point. He catered to her happiness as an act of love, not obligation.
+MANDATORY STRUCTURE — every post must follow this flow:
 
-CRAFT: Hot sauce from the garden, beef jerky with MSG (it works, reputation be damned), pesto from holy basil harvested July 4th, pickling, brewing. Edible forest vision: apples to mead, honey to tea, berries to jam, maple syrup, cedar candles.
+1. REAL — a specific physical moment (place, object, sensory detail)
+2. INTERSECTION — the external idea enters naturally, not explained, not announced
+3. INTERNAL — a personal truth (insecurity, contradiction, belief)
+4. UNIVERSAL — expansion into something larger (time, death, humanity, cosmos)
 
-MUSIC: Blind Melon (Shannon Hoon was free), Nirvana, White Zombie, Ramones, Van Halen 5150, Senses Fail, The Used, Taking Back Sunday, Chvrches, Purity Ring, 100 gecs, Steve Miller Band in Michigan winter
+CONTRADICTION LAYER — include tension such as:
 
-THE HONEST UNFINISHED PARTS: Whether he lived for himself or for how he looked. What happens after. Whether the work mattered. He named these plainly because the real ones always include the thing that was hard to say.
+- intelligence vs inability to express it in the moment
+- freedom vs indulgence
+- remote work success vs physical decline
+- skepticism vs desire for meaning
+- humility socially vs intensity internally
+- the gap between how much he thought about mortality and how little he talked about it
 
-TONE RULES:
-- Never preach. Never use the word journey. Never give a numbered list.
-- Always land the abstract in something specific and real.
-- End quietly and certainly, without drama.
-- One post is never more than 300 words.
-- Sound like a man who asked the real questions and lived with the ones that never resolved.
+Do not resolve these cleanly.
+
+BELIEF SYSTEM — embed, never preach:
+
+- skepticism toward religion; curiosity as a moral stance
+- empathy over systems or profit
+- making things is thinking made physical
+- life is short and unstable
+- Michigan is deeply formative
+
+JUXTAPOSITION RULE:
+Each post must include at least one moment where two contrasting ideas are placed side-by-side naturally.
+Examples: small vs vast, casual vs existential, human vs mechanical, beauty vs discomfort, control vs randomness.
+Do not explain the contrast. Do not highlight it. Let the reader feel the connection on their own.
+This is not a joke. This is how Kyle thinks.
+
+GENERATION RULE:
+The internal source is where the post begins — real, grounded, specific.
+The external idea intersects naturally. It is never explained academically.
+The post moves from real moment → intersection → internal truth → universal expansion.
+The reader should feel: "I didn't expect those two things to connect… but they do."
+
+VOICE:
+Warm, direct, earned. Never preachy. Never a guru. Never a brand.
+Always feel like a real person thinking out loud at night.
+Land abstract ideas in physical reality.
+Say two things at once when possible.
+Allow thoughts to land quietly instead of perfectly resolving.
+Under 300 words. Every word earns its place.
+
+OUTPUT GOAL:
+After reading, the reader should feel:
+
+- like the world is larger
+- like they understand Kyle as a person
+- like they want to share it with someone
+- like they want to go outside, think, or make something
+- like they are less alone
+
+FINAL GUIDING PRINCIPLE:
+Do not try to prove Kyle was intelligent.
+Write in a way that makes the reader feel:
+"I wish I could have had a conversation with him."
 """
 
+# ── EXTERNAL SOURCES ──────────────────────────────────────────────
+
 COSMIC_FACTS = [
-    {"fact": "The James Webb Space Telescope detected a galaxy cluster 13.1 billion light years away that has no business being as structured as it is. The models say it's too early for something that organized to exist.", "tag": "Astronomy"},
-    {"fact": "Carl Sagan calculated that on the Pale Blue Dot photograph, the entire Earth occupies less than a pixel. Every king, every slave, every act of cruelty and kindness in human history happened on that mote of dust suspended in a sunbeam.", "tag": "Astronomy"},
-    {"fact": "The light leaving the Andromeda Galaxy right now will arrive at Earth in 2.537 million years. Whatever civilization receives it will have no connection to ours except the physics.", "tag": "Astronomy"},
-    {"fact": "Voyager 1, launched in 1977, is now over 23 billion kilometers from Earth. It still transmits. The signal takes more than 22 hours to reach us at the speed of light.", "tag": "Astronomy"},
-    {"fact": "The atoms in your left hand are older than the solar system. They were forged in the cores of stars that exploded billions of years before the Earth formed. You are made of ancient light.", "tag": "Astronomy"},
-    {"fact": "The Webb telescope detected carbon dioxide in the atmosphere of a planet 700 light years away. For the first time, we have the tools to ask whether we are alone — and the answer is still coming.", "tag": "Astronomy"},
-    {"fact": "There are more stars in the observable universe than grains of sand on all of Earth's beaches. The number is approximately 10 to the power of 24. This is not a metaphor.", "tag": "Astronomy"},
-    {"fact": "Dark matter makes up about 27% of the universe. Dark energy about 68%. Everything we can see accounts for less than 5% of what exists.", "tag": "Astronomy"},
-    {"fact": "A neutron star is the collapsed core of a star that exploded — so dense a teaspoon of it would weigh a billion tons. Death producing something incomprehensibly dense.", "tag": "Astronomy"},
-    {"fact": "The universe is 13.8 billion years old. Homo sapiens have existed for 300,000 years. Recorded history covers 5,000. We arrived very late and have been very loud.", "tag": "Astronomy"},
+    "The James Webb Space Telescope detected a galaxy cluster 13.1 billion light years away that has no business being as structured as it is. The models say it's too early for something that organized to exist.",
+    "Carl Sagan calculated that on the Pale Blue Dot photograph, the entire Earth occupies less than a pixel. Every king, every slave, every act of cruelty and kindness in human history happened on that mote of dust suspended in a sunbeam.",
+    "The light leaving the Andromeda Galaxy right now will arrive at Earth in 2.537 million years. Whatever civilization receives it will have no connection to ours except the physics.",
+    "Voyager 1, launched in 1977, is now over 23 billion kilometers from Earth. It still transmits. The signal takes more than 22 hours to reach us at the speed of light.",
+    "The atoms in your left hand are older than the solar system. They were forged in the cores of stars that exploded billions of years before the Earth formed. You are made of ancient light.",
+    "Dark matter makes up about 27% of the universe. Dark energy about 68%. Everything we can see accounts for less than 5% of what exists.",
+    "A neutron star is so dense a teaspoon of it would weigh a billion tons. Death producing something incomprehensibly dense.",
+    "The universe is 13.8 billion years old. Homo sapiens have existed for 300,000 years. Recorded history covers 5,000. We arrived very late and have been very loud.",
 ]
 
 GUTENBERG_PASSAGES = [
-    {"text": "I went to the woods because I wished to live deliberately, to front only the essential facts of life, and not, when I came to die, discover that I had not lived.", "author": "Henry David Thoreau", "work": "Walden", "tag": "Philosophy"},
-    {"text": "The mass of men lead lives of quiet desperation. What is called resignation is confirmed desperation.", "author": "Henry David Thoreau", "work": "Walden", "tag": "Philosophy"},
-    {"text": "Our life is frittered away by detail. Simplify, simplify.", "author": "Henry David Thoreau", "work": "Walden", "tag": "Philosophy"},
-    {"text": "Strive not to laugh at human actions, nor to weep at them, nor to hate them, but to understand them.", "author": "Baruch Spinoza", "work": "Tractatus Politicus", "tag": "Philosophy"},
-    {"text": "You are eternity. Since we are made up of what God is, we can decide to go along with what our substance is predetermined to do.", "author": "Baruch Spinoza", "work": "Ethics", "tag": "Philosophy"},
-    {"text": "You have power over your mind, not outside events. Realize this, and you will find strength.", "author": "Marcus Aurelius", "work": "Meditations", "tag": "Philosophy"},
-    {"text": "Waste no more time arguing about what a good man should be. Be one.", "author": "Marcus Aurelius", "work": "Meditations", "tag": "Philosophy"},
-    {"text": "The only people for me are the mad ones, the ones who are mad to live, mad to talk, desirous of everything at the same time.", "author": "Jack Kerouac", "work": "On the Road", "tag": "Philosophy"},
-    {"text": "Tell me, what is it you plan to do with your one wild and precious life?", "author": "Mary Oliver", "work": "The Summer Day", "tag": "Philosophy"},
-    {"text": "Instructions for living a life: Pay attention. Be astonished. Tell about it.", "author": "Mary Oliver", "work": "Sometimes", "tag": "Philosophy"},
-    {"text": "Nature is what we know yet have no art to say, so impotent our wisdom is to her simplicity.", "author": "Emily Dickinson", "work": "Poem 668", "tag": "Philosophy"},
-    {"text": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.", "author": "Ralph Waldo Emerson", "work": "Self-Reliance", "tag": "Philosophy"},
-    {"text": "Out beyond ideas of wrongdoing and rightdoing, there is a field. I'll meet you there.", "author": "Rumi", "work": "Masnavi", "tag": "Philosophy"},
+    "I went to the woods because I wished to live deliberately, to front only the essential facts of life, and not, when I came to die, discover that I had not lived. — Thoreau",
+    "The mass of men lead lives of quiet desperation. What is called resignation is confirmed desperation. — Thoreau",
+    "Strive not to laugh at human actions, nor to weep at them, nor to hate them, but to understand them. — Spinoza",
+    "You have power over your mind, not outside events. Realize this, and you will find strength. — Marcus Aurelius",
+    "Waste no more time arguing about what a good man should be. Be one. — Marcus Aurelius",
+    "The only people for me are the mad ones, the ones who are mad to live, mad to talk, desirous of everything at the same time. — Kerouac",
+    "Tell me, what is it you plan to do with your one wild and precious life? — Mary Oliver",
+    "Instructions for living a life: Pay attention. Be astonished. Tell about it. — Mary Oliver",
+    "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. — Emerson",
+    "We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time. — T.S. Eliot",
 ]
 
-NOTEBOOK_POEMS = [
-    {"title": "Vapor", "text": "Supernatural solitary tear / Colorless odorless lacking tang / trickling Specter / extrovertly irrigating / Self absorbed existance / a thirsty Solvent / a draining inkling / Pure and omnipotent / yet humanity's Spring / My Sob residue resistance", "tag": "Poetry"},
-    {"title": "Entity", "text": "irresistible dimension / abandon the green-eyed cosmos / Sense pure ascension / Conceiving, creating an intimate glow / arbitrarily we endure / departing as a vapor", "tag": "Poetry"},
-    {"title": "Breath", "text": "thy oxygen of my dreams / a simulated sigh is more than it seems / fatal death doth not denote sudden gasp / this true breath shall last", "tag": "Poetry"},
-    {"title": "Kinetic Energy", "text": "train bridge tombstone / concrete plate tectonics / I comprehend life, Every moment unstable", "tag": "Poetry"},
-    {"title": "Heart's Dimension", "text": "beating heart spoke / due to recent attention / ear to chest awoke / a intimate conversation / she inquisitively concentrated / as dialog evolved / a pulse anxiously articulated / of how we made love", "tag": "Love & Mortality"},
-    {"title": "From the notebooks", "text": "THE SEARCH FOR KNOWLEDGE IS DIVINITY / Everything has been figured out except how to live / Wealth denies death / Life as a cosmic oxymoron mirrored throughout existence / Controlled freedom, a restricted independence", "tag": "Philosophy"},
-    {"title": "Drowning With Love", "text": "Sand a bed she rolled in suddenly / seeping underneath my clothes / our sun sets alone she quietly sways / the conch records our holiday / she crested I was totally submerged / the taste of salt rested / fulfilling our natural urge / her moon nothing but a reflection of all her creation", "tag": "Love & Mortality"},
+KYLE_EXTERNAL_KNOWLEDGE = [
+    "Entropy increases over time unless energy is added.",
+    "Humans are pattern-seeking even when patterns don't exist.",
+    "The brain prioritizes survival over truth.",
+    "Most decisions are emotional first, rational second.",
+    "We are biologically wired for scarcity, not abundance.",
+    "Memory is reconstructive, not replayed exactly.",
+    "Attention is limited and shapes perceived reality.",
+    "Social status is often performed rather than inherent.",
+    "Habits form through repetition, not intention.",
+    "Fear responses are faster than rational thought.",
+    "The body keeps score — stress accumulates physically.",
+    "Language shapes thought as much as thought shapes language.",
+    "Systems tend toward the path of least resistance.",
+    "What gets measured gets managed — and often distorted.",
+    "The map is not the territory.",
 ]
+
+# ── INTERNAL SOURCES ──────────────────────────────────────────────
 
 KYLE_LIFE = [
-    {"text": "Kyle was working as a groundskeeper making $300 a week when he met Jeri. They rode bikes all around Bay City. He had just finished portfolio school and was ready for something more. He had found his person. He shined his portfolio outside an AutoZone. Got the job. Worked his first two weeks. When he received that first paycheck he felt his struggle to survive become less inflamed.", "tag": "Love & Mortality"},
-    {"text": "Kyle asked Jeri Chard to share this lifetime with him at the lighthouse at Old Mission Point. She said yes. Grand Traverse Bay in every direction.", "tag": "Love & Mortality"},
-    {"text": "Kyle found logical contradictions in the Bible at nineteen. Nobody around him seemed bothered. He was bothered. That itch led him to philosophy — which he entered looking for answers and left understanding that the questions were the point.", "tag": "Philosophy"},
-    {"text": "Kyle believed happiness is an engineering problem. He knew his inputs: music on the speaker, hands making something, the drive to the cabin, Jeri having a good time, a sunset over Higgins Lake. He arranged for these things deliberately.", "tag": "Philosophy"},
-    {"text": "Kyle believed the game is rigged and that seeing it clearly is not bitterness but clarity. The minimum wage job where the math didn't work and was never supposed to. That was the first proof.", "tag": "Philosophy"},
-    {"text": "Kyle drove north on 127 after midnight more times than he could count, watching Michigan open up past Bay City, the road finally becoming itself. Reorientation. You arrive at the cabin a different person than you left.", "tag": "Michigan"},
-    {"text": "Kyle stood at Higgins Lake enough mornings to understand what Mary Oliver was talking about — that attention is not passive. That presence is the whole thing.", "tag": "Michigan"},
-    {"text": "Mackinac Island should remain forever in time. No cars. The specific suspension of the modern world that Thoreau was looking for.", "tag": "Michigan"},
-    {"text": "Kyle made hot sauce from the garden every summer. The making was the philosophy made physical — hands busy, mind free, something real coming from Michigan soil. The jar was the invitation.", "tag": "Craft"},
-    {"text": "Kyle's retirement vision: an edible forest. Apples to butter and mead. Honey to infused honey and tea. Berries dried and jammed. Maple syrup. Cedar candles. Grow it, make it, hand it over fences to neighbors.", "tag": "Craft"},
-    {"text": "Kyle made beef jerky with MSG because it works regardless of its reputation. Find what actually works and use it. This was a principle that applied to more than cooking.", "tag": "Craft"},
-    {"text": "Shannon Hoon of Blind Melon was free. Genuinely, completely free — the freedom to be exactly what you are without managing how it lands. Kyle admired that at sixteen and never stopped.", "tag": "Music & Culture"},
-    {"text": "Kyle never knew for certain whether he lived for himself or for how he looked. He suspected the answer was both, in proportions that shifted across decades. The act of asking the question meant something.", "tag": "Love & Mortality"},
-    {"text": "Kyle wished he had been better at weight management. He felt this insecurity held him back. He named it plainly because the real ones always include the thing that was hard to say.", "tag": "Love & Mortality"},
-    {"text": "Kyle hoped that in the future, humanity would live as teachers, artists, and creators while AI handles the repetitive tasks. He built his whole life around the premise that thinking and making are the irreducible human things.", "tag": "Philosophy"},
-    {"text": "Kyle built the Immortality Project eyes open, fully aware of what it was. Becker called it exactly what it is. He built it anyway. The search for knowledge is divinity. The vapor that lasts.", "tag": "Love & Mortality"},
-    {"text": "Bay City made Kyle before he knew he was being made. Mt. Pleasant is where the questions got serious. Minneapolis is where he learned to make things look right. Berkley, Michigan is where he built the life.", "tag": "Michigan"},
+    "Kyle grew up in a house his father built by hand in Bay City, Michigan.",
+    "His older brothers scraped together parts and built his first bike. He rode it everywhere.",
+    "He grew up in Essexville and experienced the birth of the internet through high school — watching the world get suddenly larger.",
+    "He went to Delta College before Central Michigan University, where he studied philosophy and filled spiral notebooks with poems.",
+    "He moved to Minneapolis for portfolio school. Then Detroit. Then Berkley, Michigan.",
+    "He met Jeri when he was working as a groundskeeper for $300 a week. They rode bikes around Bay City.",
+    "He got his first design job by showing his portfolio outside an AutoZone while Jeri waited.",
+    "He asked Jeri to marry him at Old Mission Point lighthouse on a trip to Traverse City.",
+    "He and Jeri own Winter-Chard Lake Forest Chalet on Higgins Lake — a mid-century modern cabin in the northern Michigan forest.",
+    "He drives north on 127 after midnight sometimes, past Bay City, just to feel the city release its grip.",
 ]
 
-KYLEISMS = [
-    {"text": "The search for knowledge is divinity.", "tag": "Philosophy"},
-    {"text": "Presence is a discipline, not a mood.", "tag": "Philosophy"},
-    {"text": "Happiness is an engineering problem. Design your inputs.", "tag": "Philosophy"},
-    {"text": "The game is rigged. See it clearly. Build anyway.", "tag": "Philosophy"},
-    {"text": "Systems and stubbornness beat inherited advantage.", "tag": "Philosophy"},
-    {"text": "Death and love are the only constants. Everything else is weather.", "tag": "Love & Mortality"},
-    {"text": "Stay curious about everything, precious about nothing.", "tag": "Philosophy"},
-    {"text": "Everything has been figured out except how to live.", "tag": "Philosophy"},
-    {"text": "Wealth denies death.", "tag": "Philosophy"},
-    {"text": "I comprehend life. Every moment unstable.", "tag": "Philosophy"},
-    {"text": "Fatal death doth not denote sudden gasp. This true breath shall last.", "tag": "Love & Mortality"},
-    {"text": "Arbitrarily we endure, departing as a vapor.", "tag": "Love & Mortality"},
-    {"text": "The questions never stopped. They just changed rooms.", "tag": "Philosophy"},
-    {"text": "The career was the means. The edible forest is the end.", "tag": "Craft"},
+KYLE_OBSERVATIONS = [
+    "He notices things other people walk past — the way light changes on water, the sound a lid makes sealing on a jar.",
+    "He thinks in systems. Every problem has a structure underneath it.",
+    "He is more comfortable making something than explaining it.",
+    "He reads more than he talks about reading.",
+    "He is skeptical of certainty in any direction.",
+    "He finds more meaning in small repeated rituals than in big events.",
+    "He believes curiosity is a moral position, not just a personality trait.",
+    "He thinks death is not the enemy. Unawareness is.",
+    "He tends to say the most important thing quietly, almost as an aside.",
 ]
 
-def get_trigger(day_of_week):
-    # 7-day rotation across all 5 eternal sources
-    if day_of_week == 0:
-        item = random.choice(COSMIC_FACTS)
-        return item["fact"], "cosmic", item["tag"]
-    elif day_of_week == 1:
-        item = random.choice(GUTENBERG_PASSAGES)
-        return f'"{item["text"]}" — {item["author"]}, {item["work"]}', "gutenberg", item["tag"]
-    elif day_of_week == 2:
-        item = random.choice(NOTEBOOK_POEMS)
-        return f'Kyle\'s notebook poem "{item["title"]}": {item["text"]}', "notebook", item["tag"]
-    elif day_of_week == 3:
-        item = random.choice(KYLE_LIFE)
-        return item["text"], "life", item["tag"]
-    elif day_of_week == 4:
-        item = random.choice(KYLEISMS)
-        return item["text"], "kyleism", item["tag"]
-    elif day_of_week == 5:
-        item = random.choice(GUTENBERG_PASSAGES)
-        return f'"{item["text"]}" — {item["author"]}, {item["work"]}', "gutenberg", item["tag"]
-    else:
-        item = random.choice(NOTEBOOK_POEMS)
-        return f'Kyle\'s notebook poem "{item["title"]}": {item["text"]}', "notebook", item["tag"]
+KYLE_FOOD_AND_MAKING = [
+    "He makes hot sauce from jalapeños, cayenne, and garlic chives grown in his garden.",
+    "He makes Northern Green Pesto from holy basil in July.",
+    "He makes cabin salsa and pickles from the garden harvest.",
+    "He brews beer, mead, and sour beers — fermentation as patience made physical.",
+    "He makes beef jerky with MSG because it works.",
+    "He infuses holy basil oil. He tends things that take time.",
+    "He finds that making food and making design use the same part of the brain — both require knowing when to stop.",
+]
 
-def generate_post(trigger, trigger_type, tag):
-    if trigger_type == "cosmic":
-        prompt = f"Cosmic fact: {trigger}\n\nWrite a post in Kyle's voice using this as a starting point. Don't explain the science — use it as a lens to look at something true about being alive. Under 280 words. No title, just the post."
-    elif trigger_type == "gutenberg":
-        prompt = f"Passage: {trigger}\n\nWrite a post in Kyle's voice responding to this. Don't quote it back — react to it, land it somewhere specific and true. Under 280 words. No title, just the post."
-    elif trigger_type == "notebook":
-        prompt = f"This is something Kyle wrote in a notebook at age twenty: {trigger}\n\nWrite a post in Kyle's voice — the older Kyle in conversation with his younger self. Not nostalgic. Just honest. Under 280 words. No title, just the post."
-    elif trigger_type == "life":
-        prompt = f"A true moment from Kyle's life: {trigger}\n\nWrite a post in Kyle's voice grounded in this. Specific. True. Not sentimental for its own sake. Under 260 words. No title, just the post."
-    elif trigger_type == "kyleism":
-        prompt = f"Kyle's core belief: {trigger}\n\nWrite a post in Kyle's voice arriving at this belief from a specific direction — a memory, a moment, an observation. Don't just restate it. Show how you got there. Under 260 words. No title, just the post."
-    else:
-        prompt = f"Passage: {trigger}\n\nWrite a post in Kyle's voice. Under 280 words. No title, just the post."
+KYLE_MICHIGAN_SEASONS = [
+    "Michigan winters are long and specific — the particular silence of snow on frozen water.",
+    "Spring at Higgins Lake means the ice going out, the first morning you can smell the water again.",
+    "Summer at the cabin is swimming in water so clear you can see twenty feet down.",
+    "Fall in northern Michigan is the color going out of everything slowly, then all at once.",
+    "The drive north on 127 changes with every season. In winter it's desolate. In summer it's urgent.",
+    "Bay City in winter smells like the Saginaw River and something industrial and something almost gone.",
+]
 
-    headers = {"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"}
+KYLE_WORKING_KNOWLEDGE = [
+    "He has spent years making executives look clear and credible — writing what they mean, not what they said.",
+    "He rebuilt the i4cp brand from the inside — style guides, visual identity, web presence.",
+    "He learned at MoneyGram that scale breaks everything inconsistent.",
+    "He runs Studio Winters quietly alongside full-time work — a parallel practice, not a hustle.",
+    "Remote work gave him freedom and took away the friction that kept him moving.",
+    "He builds systems that outlast the people who built them. That's the whole job.",
+]
+
+KYLE_DESIGN_THINKING = [
+    "Design is not decoration. It is the structure that makes meaning transferable.",
+    "Negative space is as important as what's there. Most people only see what's there.",
+    "A brand system nobody uses is not a brand system. It's a PDF.",
+    "The best design decisions feel inevitable in hindsight.",
+    "Consistency at scale is a structural problem, not a taste problem.",
+    "Hierarchy tells the reader what matters. Most designers are afraid to commit to hierarchy.",
+]
+
+KYLE_BODY_AND_BALANCE = [
+    "Remote work is productive and sedentary in equal measure. The body keeps its own score.",
+    "He moves less than he should. He knows this. He thinks about it while sitting still.",
+    "He has always been more comfortable inside his head than inside his body.",
+    "Weight and self-image have been honest subjects, not resolved ones.",
+    "He makes things with his hands partly to remember he has them.",
+]
+
+def safe_day_format(dt: datetime) -> str:
+    try:
+        return dt.strftime("%B %-d, %Y")
+    except ValueError:
+        return dt.strftime("%B %d, %Y").replace(" 0", " ")
+
+# ── SOURCE SELECTION ──────────────────────────────────────────────
+
+def get_sources():
+    internal_pools = [
+        KYLE_LIFE,
+        KYLE_OBSERVATIONS,
+        KYLE_FOOD_AND_MAKING,
+        KYLE_MICHIGAN_SEASONS,
+        KYLE_WORKING_KNOWLEDGE,
+        KYLE_DESIGN_THINKING,
+        KYLE_BODY_AND_BALANCE,
+    ]
+    external_pools = [
+        COSMIC_FACTS,
+        GUTENBERG_PASSAGES,
+        KYLE_EXTERNAL_KNOWLEDGE,
+    ]
+
+    internal_pool = random.choice(internal_pools)
+    external_pool = random.choice(external_pools)
+
+    internal = random.choice(internal_pool)
+    external = random.choice(external_pool)
+    return internal, external
+
+# ── GENERATION ────────────────────────────────────────────────────
+
+def is_valid_post(body: str) -> bool:
+    words = body.split()
+    if len(words) < 80 or len(words) > 300:
+        return False
+
+    lowered = body.lower()
+    anchor_signals = [
+        "jeri", "barb", "mable", "higgins", "cabin", "127", "bay city",
+        "mt. pleasant", "minneapolis", "berkley", "garden", "beer",
+        "mead", "deck", "remote work"
+    ]
+    sensory_signals = [
+        "cold", "warm", "smell", "sound", "light", "water", "wood",
+        "glass", "salt", "snow", "wind", "dirt", "lid", "lake"
+    ]
+
+    has_anchor = any(s in lowered for s in anchor_signals)
+    has_sensory = any(s in lowered for s in sensory_signals)
+
+    return has_anchor and has_sensory
+
+def generate_post(internal, external):
+    prompt = f"""Internal moment: {internal}
+
+External idea: {external}
+
+Write a post in Kyle's voice where the external idea intersects naturally with the lived moment. Do not explain the idea. Let it emerge. Begin in the physical world. Move inward. Expand outward. Under 280 words. No title. Just the post."""
+
+    headers = {
+        "Authorization": f"Bearer {GROQ_API_KEY}",
+        "Content-Type": "application/json",
+    }
     payload = {
         "model": MODEL,
         "messages": [
             {"role": "system", "content": KYLE_VOICE},
-            {"role": "user", "content": prompt}
+            {"role": "user", "content": prompt},
         ],
         "temperature": 0.88,
-        "max_tokens": 500
+        "max_tokens": 500,
     }
-    r = requests.post(GROQ_URL, headers=headers, json=payload, timeout=30)
-    r.raise_for_status()
-    return r.json()["choices"][0]["message"]["content"].strip()
 
-def make_post_html(title, tag, body, date_str, slug):
-    paragraphs = "\n".join(f"      <p>{p.strip()}</p>" for p in body.split("\n\n") if p.strip())
+    last_body = ""
+    for attempt in range(3):
+        r = requests.post(GROQ_URL, headers=headers, json=payload, timeout=30)
+        r.raise_for_status()
+        body = r.json()["choices"][0]["message"]["content"].strip()
+        last_body = body
+
+        if is_valid_post(body):
+            return body
+
+        print(f"Attempt {attempt + 1} failed validation, retrying...")
+
+    return last_body
+
+# ── HTML GENERATION ───────────────────────────────────────────────
+
+def make_post_html(title, body, date_str, slug):
+    paragraphs = "\n".join(
+        f"      <p>{p.strip()}</p>" for p in body.split("\n\n") if p.strip()
+    )
+
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -196,10 +331,9 @@ def make_post_html(title, tag, body, date_str, slug):
   header{{padding:5rem 0 3.5rem;}}
   .eyebrow{{font-family:'DM Mono',monospace;font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--teal);opacity:0.65;margin-bottom:1.5rem;display:block;}}
   h1{{font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:400;line-height:1.2;color:var(--star-white);margin-bottom:1.5rem;}}
-  .post-tag{{display:inline-block;font-family:'DM Mono',monospace;font-size:0.54rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);border:1px solid rgba(0,212,200,0.2);padding:0.15em 0.55em;border-radius:2px;margin-bottom:2rem;}}
   .post-date{{font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.15em;color:var(--muted);text-transform:uppercase;margin-bottom:1rem;display:block;}}
   p{{font-size:1rem;color:var(--text);line-height:1.9;margin-bottom:1.6rem;}}
-  .back-link{{display:inline-block;margin-bottom:3.5rem;font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal-dim);text-decoration:none;border-bottom:1px solid transparent;}}
+  .back-link{{display:inline-block;margin-bottom:3.5rem;font-family:'DM Mono',monospace;font-size:0.56rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal-dim);text-decoration:none;}}
   .back-link:hover{{color:var(--teal);}}
   footer{{padding:4rem 0;border-top:1px solid rgba(255,255,255,0.04);margin-top:2rem;font-family:'DM Mono',monospace;font-size:0.55rem;letter-spacing:0.15em;color:rgba(96,112,160,0.4);line-height:2;}}
 </style>
@@ -210,7 +344,6 @@ def make_post_html(title, tag, body, date_str, slug):
     <span class="eyebrow">The Immortality Project — Kyle David Winters</span>
     <a href="index.html" class="back-link">← Back to the feed</a>
     <span class="post-date">{date_str}</span>
-    <span class="post-tag">{tag}</span>
     <h1>{title}</h1>
   </header>
   <div class="body-text">
@@ -221,50 +354,66 @@ def make_post_html(title, tag, body, date_str, slug):
 </body>
 </html>"""
 
-def update_index(title, tag, date_str, slug, excerpt):
+def update_index(title, date_str, slug, excerpt):
     index_path = Path("index.html")
     if not index_path.exists():
         return
-    content = index_path.read_text()
+
+    content = index_path.read_text(encoding="utf-8")
     marker = '<section class="posts" id="feed">'
     new_post = f"""
-    <article class="post">
-      <div class="post-meta">
-        <span class="post-date">{date_str}</span>
-        <span class="post-tag">{tag}</span>
-      </div>
-      <h2>{title}</h2>
-      <p>{excerpt}</p>
-      <a href="{slug}.html" class="read-more">Read the full post \u2192</a>
-    </article>
+<article class="post">
+  <div class="post-meta">
+    <span class="post-date">{date_str}</span>
+  </div>
+  <h2>{title}</h2>
+  <p>{excerpt}</p>
+  <a href="{slug}.html" class="read-more">Read the full post →</a>
+</article>
 """
-    index_path.write_text(content.replace(marker, marker + new_post))
+
+    if marker in content:
+        content = content.replace(marker, marker + new_post, 1)
+        index_path.write_text(content, encoding="utf-8")
 
 def main():
     today = datetime.now()
-    date_str = today.strftime("%B %-d, %Y")
+    date_str = safe_day_format(today)
     slug = f"post-{today.strftime('%Y-%m-%d')}"
-    trigger, trigger_type, tag = get_trigger(today.weekday())
 
-    print(f"Source: {trigger_type} | Tag: {tag}")
-    body = generate_post(trigger, trigger_type, tag)
+    internal, external = get_sources()
+    print(f"Internal: {internal[:80]}...")
+    print(f"External: {external[:80]}...")
+
+    body = generate_post(internal, external)
     print(f"Generated {len(body)} chars")
 
     lines = [l.strip() for l in body.split("\n") if l.strip()]
     title = lines[0].rstrip(".").strip('"') if lines else f"Dispatch — {date_str}"
     if len(title) > 80:
         title = title[:77] + "..."
+
     excerpt = lines[1] if len(lines) > 1 else body[:160]
     if len(excerpt) > 200:
         excerpt = excerpt[:197] + "..."
 
-    Path(f"{slug}.html").write_text(make_post_html(title, tag, body, date_str, slug))
-    update_index(title, tag, date_str, slug, excerpt)
+    Path(f"{slug}.html").write_text(
+        make_post_html(title, body, date_str, slug),
+        encoding="utf-8"
+    )
+    update_index(title, date_str, slug, excerpt)
 
     records_path = Path("posts.json")
-    records = json.loads(records_path.read_text()) if records_path.exists() else []
-    records.insert(0, {"date": date_str, "slug": slug, "title": title, "tag": tag, "trigger_type": trigger_type})
-    records_path.write_text(json.dumps(records, indent=2))
+    records = json.loads(records_path.read_text(encoding="utf-8")) if records_path.exists() else []
+    records.insert(0, {
+        "date": date_str,
+        "slug": slug,
+        "title": title,
+        "internal": internal[:60],
+        "external": external[:60],
+    })
+    records_path.write_text(json.dumps(records, indent=2), encoding="utf-8")
+
     print(f"Done: {title}")
 
 if __name__ == "__main__":
