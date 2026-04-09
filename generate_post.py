@@ -354,27 +354,52 @@ def make_post_html(title, body, date_str, slug):
 </body>
 </html>"""
 
-def update_index(title, date_str, slug, excerpt):
+# ── INDEX REBUILD (replaces old prepend approach) ─────────────────
+
+def update_index(records):
+    """Rebuild the feed section of index.html entirely from posts.json.
+    To delete a post: remove it from posts.json and delete its .html file.
+    The next run will reflect the change cleanly.
+    """
     index_path = Path("index.html")
     if not index_path.exists():
         return
 
     content = index_path.read_text(encoding="utf-8")
-    marker = '<section class="posts" id="feed">'
-    new_post = f"""
+
+    start_marker = '<section class="posts" id="feed">'
+    end_marker = "</section>"
+
+    start_idx = content.find(start_marker)
+    if start_idx == -1:
+        print("Warning: could not find feed section marker in index.html")
+        return
+
+    end_idx = content.find(end_marker, start_idx)
+    if end_idx == -1:
+        print("Warning: could not find closing </section> in index.html")
+        return
+
+    # Build fresh article list from records
+    articles = ""
+    for rec in records:
+        articles += f"""
 <article class="post">
   <div class="post-meta">
-    <span class="post-date">{date_str}</span>
+    <span class="post-date">{rec['date']}</span>
   </div>
-  <h2>{title}</h2>
-  <p>{excerpt}</p>
-  <a href="{slug}.html" class="read-more">Read the full post →</a>
+  <h2>{rec['title']}</h2>
+  <p>{rec.get('excerpt', '')}</p>
+  <a href="{rec['slug']}.html" class="read-more">Read the full post →</a>
 </article>
 """
 
-    if marker in content:
-        content = content.replace(marker, marker + new_post, 1)
-        index_path.write_text(content, encoding="utf-8")
+    new_section = start_marker + "\n" + articles + end_marker
+    content = content[:start_idx] + new_section + content[end_idx + len(end_marker):]
+    index_path.write_text(content, encoding="utf-8")
+    print(f"index.html rebuilt with {len(records)} posts.")
+
+# ── MAIN ──────────────────────────────────────────────────────────
 
 def main():
     today = datetime.now()
@@ -397,22 +422,27 @@ def main():
     if len(excerpt) > 200:
         excerpt = excerpt[:197] + "..."
 
+    # Write individual post page
     Path(f"{slug}.html").write_text(
         make_post_html(title, body, date_str, slug),
         encoding="utf-8"
     )
-    update_index(title, date_str, slug, excerpt)
 
+    # Load existing records, prepend new post (with excerpt), save
     records_path = Path("posts.json")
     records = json.loads(records_path.read_text(encoding="utf-8")) if records_path.exists() else []
     records.insert(0, {
         "date": date_str,
         "slug": slug,
         "title": title,
+        "excerpt": excerpt,       # stored so index rebuilds correctly
         "internal": internal[:60],
         "external": external[:60],
     })
     records_path.write_text(json.dumps(records, indent=2), encoding="utf-8")
+
+    # Rebuild index.html entirely from records — no more prepend drift
+    update_index(records)
 
     print(f"Done: {title}")
 
